@@ -9,7 +9,7 @@ npm install
 ```
 ### 第二步运行expressServe.js文件
 ```
-node expressServe.js
+node expressServer.js
 ```
 
 ### 浏览器打开
