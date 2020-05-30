@@ -46,13 +46,13 @@ app.post('/addUser.json', function (req, res) {
 	let data = {rc:0,msg:'添加用户成功'};
 	 res.json(data);
 })
-// app.post('/deleteUser.json', function (req, res) {
-//    // 删除用户
-// 		let reqData = req.body;
-// 		console.log('删除用户',reqData);
-// 		let data = {rc:0,msg:'删除用户成功'};
-// 		 res.json(data);
-// })
+app.delete('/deleteUser.json', function (req, res) {
+   // 删除用户
+	let reqData = req.body;
+	console.log('删除用户',reqData);
+	let data = {rc:0,msg:'删除用户成功'};
+	res.json(data);
+})
 
 //开启服务，监听请求
 var server = app.listen(8888, function () {
